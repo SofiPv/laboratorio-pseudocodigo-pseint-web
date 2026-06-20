@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciclos</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+
+<nav class="top-nav">
+  <a class="brand" href="../index.html">PSeInt Lab</a>
+  <div class="nav-links">
+    <a href="catalogo.html" data-page="catalogo">Catálogo</a>
+    <a href="visualizador.html" data-page="visualizador">Visualizador</a>
+    <a href="ciclos.html" data-page="ciclos" class="active">Ciclos</a>
+    <a href="condicionales.html" data-page="condicionales">Condicionales</a>
+    <a href="patrones.html" data-page="patrones">Patrones</a>
+    <a href="practica.html" data-page="practica">Práctica</a>
+  </div>
+</nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 03</p>
+      <h1>Ciclos Para, Mientras y Repetir</h1>
+      <p>Compara estructuras repetitivas con tabla de iteraciones, acumuladores y condiciones evaluadas.</p>
+    </section>
+  </header>
+
+  <main class="page-layout">
+    <aside class="card controls">
+      <h2>Configuración</h2>
+      <label>
+        Tipo de ciclo
+        <select id="loopType">
+          <option value="para">Para</option>
+          <option value="mientras">Mientras</option>
+          <option value="repetir">Repetir</option>
+        </select>
+      </label>
+      <label>Inicio <input id="startInput" type="number" value="1"></label>
+      <label>Fin <input id="endInput" type="number" value="10"></label>
+      <label>Paso <input id="stepInput" type="number" value="1"></label>
+      <label>Número para tabla <input id="tableInput" type="number" value="7"></label>
+
+      <div class="button-grid">
+        <button id="simulateBtn">Simular</button>
+        <button id="copyBtn" class="secondary">Copiar tabla</button>
+      </div>
+
+      <section class="tool-card">
+        <h3>Pseudocódigo</h3>
+        <div id="codePanel" class="code-panel"></div>
+      </section>
+    </aside>
+
+    <section class="card main-card">
+      <section class="stat-grid">
+        <div class="stat"><span>Iteraciones</span><strong id="iterationsStat"></strong></div>
+        <div class="stat"><span>Acumulador</span><strong id="accumulatorStat"></strong></div>
+        <div class="stat"><span>Tipo</span><strong id="typeStat"></strong></div>
+      </section>
+
+      <section class="tool-card">
+        <h2>Tabla de iteraciones</h2>
+        <div class="table-wrapper">
+          <table id="loopTable"></table>
+        </div>
+      </section>
+
+      <section class="tool-card">
+        <h2>Salida</h2>
+        <pre id="outputBox" class="output-console"></pre>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Ciclos · Para, Mientras, Repetir y acumuladores.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/ciclos.js"></script>
+</body>
+</html>

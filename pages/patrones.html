@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrones con asteriscos</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+
+<nav class="top-nav">
+  <a class="brand" href="../index.html">PSeInt Lab</a>
+  <div class="nav-links">
+    <a href="catalogo.html" data-page="catalogo">Catálogo</a>
+    <a href="visualizador.html" data-page="visualizador">Visualizador</a>
+    <a href="ciclos.html" data-page="ciclos">Ciclos</a>
+    <a href="condicionales.html" data-page="condicionales">Condicionales</a>
+    <a href="patrones.html" data-page="patrones" class="active">Patrones</a>
+    <a href="practica.html" data-page="practica">Práctica</a>
+  </div>
+</nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 05</p>
+      <h1>Patrones con asteriscos</h1>
+      <p>Genera figuras de consola usando ciclos anidados y observa la relación entre filas, columnas y condiciones.</p>
+    </section>
+  </header>
+
+  <main class="page-layout">
+    <aside class="card controls">
+      <h2>Figura</h2>
+      <label>
+        Patrón
+        <select id="patternSelect">
+          <option value="triangulo">Triángulo creciente</option>
+          <option value="invertido">Triángulo invertido</option>
+          <option value="cuadrado">Cuadrado lleno</option>
+          <option value="hueco">Cuadrado hueco</option>
+          <option value="piramide">Pirámide</option>
+        </select>
+      </label>
+
+      <label>Tamaño <input id="sizeInput" type="number" min="2" max="20" value="6"></label>
+
+      <div class="button-grid">
+        <button id="drawBtn">Generar</button>
+        <button id="copyBtn" class="secondary">Copiar patrón</button>
+      </div>
+
+      <section class="tool-card">
+        <h3>Pseudocódigo</h3>
+        <div id="codePanel" class="code-panel"></div>
+      </section>
+    </aside>
+
+    <section class="card main-card">
+      <section class="formula-grid">
+        <article>
+          <p class="section-label">Salida de consola</p>
+          <pre id="patternOutput" class="pattern-output"></pre>
+        </article>
+        <article>
+          <p class="section-label">Lectura</p>
+          <div id="explanationBox" class="feedback"></div>
+        </article>
+      </section>
+
+      <section class="tool-card">
+        <h2>Tabla de filas</h2>
+        <div class="table-wrapper">
+          <table id="patternTable"></table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Patrones · ciclos anidados y condiciones por fila/columna.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/patrones.js"></script>
+</body>
+</html>

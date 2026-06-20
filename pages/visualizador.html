@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizador paso a paso</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+
+<nav class="top-nav">
+  <a class="brand" href="../index.html">PSeInt Lab</a>
+  <div class="nav-links">
+    <a href="catalogo.html" data-page="catalogo">Catálogo</a>
+    <a href="visualizador.html" data-page="visualizador" class="active">Visualizador</a>
+    <a href="ciclos.html" data-page="ciclos">Ciclos</a>
+    <a href="condicionales.html" data-page="condicionales">Condicionales</a>
+    <a href="patrones.html" data-page="patrones">Patrones</a>
+    <a href="practica.html" data-page="practica">Práctica</a>
+  </div>
+</nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 02</p>
+      <h1>Visualizador paso a paso</h1>
+      <p>Ejecuta pseudocódigo estilo PSeInt con línea activa, memoria de variables, salida y diagrama de flujo.</p>
+    </section>
+  </header>
+
+  <main class="page-layout">
+    <aside class="card controls">
+      <h2>Algoritmo</h2>
+      <label>
+        Ejercicio
+        <select id="algorithmSelect"></select>
+      </label>
+
+      <div id="inputArea"></div>
+
+      <div class="button-grid">
+        <button id="runBtn">Ejecutar completo</button>
+        <button id="resetTraceBtn" class="secondary">Iniciar traza</button>
+        <button id="prevBtn" class="secondary">Paso anterior</button>
+        <button id="nextBtn" class="secondary">Paso siguiente</button>
+        <button id="copyJsBtn" class="secondary">Copiar JS equivalente</button>
+      </div>
+
+      <section class="tool-card">
+        <h3>Estado</h3>
+        <div id="statusBox" class="feedback"></div>
+      </section>
+
+      <section class="tool-card">
+        <h3>Salida</h3>
+        <pre id="outputConsole" class="output-console"></pre>
+      </section>
+    </aside>
+
+    <section class="card main-card">
+      <section class="formula-grid">
+        <article>
+          <p class="section-label">Pseudocódigo</p>
+          <div id="codePanel" class="code-panel"></div>
+        </article>
+        <article>
+          <p class="section-label">Memoria</p>
+          <div id="memoryGrid" class="memory-grid"></div>
+        </article>
+      </section>
+
+      <section class="inner-card">
+        <h2>Diagrama de flujo</h2>
+        <div class="canvas-card">
+          <canvas id="flowCanvas" width="980" height="620"></canvas>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Visualizador · memoria, salida y flujo de ejecución.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/visualizador.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de algoritmos</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+
+<nav class="top-nav">
+  <a class="brand" href="../index.html">PSeInt Lab</a>
+  <div class="nav-links">
+    <a href="catalogo.html" data-page="catalogo" class="active">Catálogo</a>
+    <a href="visualizador.html" data-page="visualizador">Visualizador</a>
+    <a href="ciclos.html" data-page="ciclos">Ciclos</a>
+    <a href="condicionales.html" data-page="condicionales">Condicionales</a>
+    <a href="patrones.html" data-page="patrones">Patrones</a>
+    <a href="practica.html" data-page="practica">Práctica</a>
+  </div>
+</nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 01</p>
+      <h1>Catálogo de algoritmos</h1>
+      <p>Ejercicios de lógica algorítmica organizados como módulos didácticos con categoría, objetivo y estructura usada.</p>
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="button-row">
+        <button class="secondary" data-filter="todos">Todos</button>
+        <button class="secondary" data-filter="condicionales">Condicionales</button>
+        <button class="secondary" data-filter="ciclos">Ciclos</button>
+        <button class="secondary" data-filter="numeros">Números</button>
+        <button class="secondary" data-filter="cadenas">Cadenas</button>
+        <button class="secondary" data-filter="patrones">Patrones</button>
+      </div>
+
+      <div id="algorithmGrid" class="algorithm-grid"></div>
+    </section>
+
+    <section class="panel">
+      <p class="section-label">Contenido</p>
+      <h2>Contenido del laboratorio</h2>
+      <div class="two-col">
+        <article>
+          <h3>Ejercicios base</h3>
+          <ul>
+            <li>Par o impar con MOD.</li>
+            <li>Mayor de dos o tres valores.</li>
+            <li>División por restas sucesivas.</li>
+            <li>Invertir un número entero.</li>
+            <li>Comparar palabras por longitud.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Estructuras</h3>
+          <ul>
+            <li>Si / Entonces / SiNo.</li>
+            <li>Para.</li>
+            <li>Mientras.</li>
+            <li>Repetir / Hasta Que.</li>
+            <li>Contadores y acumuladores.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Catálogo · ejercicios organizados para práctica de pseudocódigo.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/catalogo.js"></script>
+</body>
+</html>

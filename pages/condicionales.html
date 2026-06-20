@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Condicionales</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+
+<nav class="top-nav">
+  <a class="brand" href="../index.html">PSeInt Lab</a>
+  <div class="nav-links">
+    <a href="catalogo.html" data-page="catalogo">Catálogo</a>
+    <a href="visualizador.html" data-page="visualizador">Visualizador</a>
+    <a href="ciclos.html" data-page="ciclos">Ciclos</a>
+    <a href="condicionales.html" data-page="condicionales" class="active">Condicionales</a>
+    <a href="patrones.html" data-page="patrones">Patrones</a>
+    <a href="practica.html" data-page="practica">Práctica</a>
+  </div>
+</nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 04</p>
+      <h1>Condicionales y operadores lógicos</h1>
+      <p>Evalúa decisiones de pseudocódigo con Si, SiNo, operadores relacionales y operadores lógicos.</p>
+    </section>
+  </header>
+
+  <main class="page-layout">
+    <aside class="card controls">
+      <h2>Valores</h2>
+      <label>A <input id="aInput" type="number" value="8"></label>
+      <label>B <input id="bInput" type="number" value="5"></label>
+      <label>C <input id="cInput" type="number" value="10"></label>
+      <label>
+        Condición
+        <select id="conditionSelect">
+          <option value="mayor">A > B</option>
+          <option value="rango">A >= B Y A <= C</option>
+          <option value="parpositivo">A MOD 2 = 0 Y A > 0</option>
+          <option value="fuera">A < B O A > C</option>
+          <option value="negacion">NO(A = B)</option>
+        </select>
+      </label>
+
+      <div class="button-grid">
+        <button id="evalBtn">Evaluar</button>
+      </div>
+
+      <section class="tool-card">
+        <h3>Pseudocódigo</h3>
+        <div id="codePanel" class="code-panel"></div>
+      </section>
+    </aside>
+
+    <section class="card main-card">
+      <section class="formula-grid">
+        <article>
+          <p class="section-label">Resultado lógico</p>
+          <div id="resultBox" class="feedback"></div>
+        </article>
+        <article>
+          <p class="section-label">Salida simulada</p>
+          <pre id="outputBox" class="output-console"></pre>
+        </article>
+      </section>
+
+      <section class="tool-card">
+        <h2>Tabla de evaluación</h2>
+        <div class="table-wrapper">
+          <table id="evaluationTable"></table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Condicionales · operadores relacionales y lógicos.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/condicionales.js"></script>
+</body>
+</html>
